@@ -8,10 +8,6 @@ license = "GPL-3.0-or-later"
 [package.metadata.forge]
 name = "canvas"
 
-[[package.metadata.forge.permissions.directories]]
-path = "~/Notes"
-why = "vault notes shown in file cards; change it to wherever your vault is"
-
 # Standalone: not part of the main workspace build.
 [workspace]
 

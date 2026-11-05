@@ -9,13 +9,19 @@ Add this to `~/.config/forge/init.rhai`:
 use_package("canvas", #{
   vc: "git@github.com:martial-plains/canvas.forge.git",
   extensions: ["canvas"],
-  grant: #{ directories: ["~/Notes"] },
   config: #{ vault: "~/Notes" },
 });
 ```
 
-Change `vault` and the granted directory to match your notes folder. Forge asks
-before running the package build command the first time.
+Change `vault` to match your notes folder. Forge asks before running the
+package build command the first time.
+
+The plugin asks for no directory access by default, so file cards show their
+path but not the note's text. To show the text, grant it your vault:
+
+```rhai
+forge.plugin.grant("canvas", #{ directories: ["~/Notes"] });
+```
 
 ## Building
 
