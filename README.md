@@ -8,7 +8,6 @@ Add this to `~/.config/forge/init.rhai`:
 ```rhai
 use_package("canvas", #{
   vc: "https://github.com/martial-plains/forge-plugin-canvas",
-  pin: "v0.1.0",
   extensions: ["canvas"],
   grant: #{ directories: ["~/Notes"] },
   config: #{ vault: "~/Notes" },
